@@ -4,7 +4,8 @@
 * Aqua Gal
 
 ## Subject
-In this project, we had built several models for audio classifications using a variety of clustering methods.
+In this project, our first mission was to run and adapt last year's project to work with our, we added tests to find if it's a known or unknown speaker, we also improve all codes of last year project.<br>
+Our second and main mission was to built several models for audio classifications using a variety of clustering methods.
 We are able to classify new audio files to known and unkown speakers:<br> 
 
 1. RadiusNeighbors; We began by pre-processing the data using Librosa, to extract the mfcc features. Similar to k-means, but more suitable to classify unkown speakers, why excluding audio files that are too far from the existing means, and marking them as "unkown".<br>
@@ -23,3 +24,26 @@ The difference in their performances stems from the merits of the CRNN. On one h
 ## Before to run the project
 you need to download the librispeech dataset, and then adapte the number of speakers you want for the tests.<br>
 Notes : we use for the clustering part 100 speakers with each one have 30 audio files (4s/audio).
+
+## parts of the project
+### Improve of last year project:
+* CustomeDataset.py
+* check_pth_content.py
+* cnn_model_wce.py
+* constants.py
+* sigproc.py
+* test_100wav.py
+* test_with_simple_audio.py
+* training.py
+* wav2vec2.py
+* wav_reader.py
+* 
+### Clustering part:
+* clustering_DEC_CRNN.py
+* clustering_DEC_EfficientNet.py
+* clustering_DEC_Wav2vec2.py
+* clustering_RadiusNeighbors.py
+* clustering_k-medoids_DYNMSC.py
+* clustering_preProcess.py
+* clustering_visualization.py
+* view_model.py
