@@ -77,7 +77,8 @@ def classify_with_radius_neighbors(featuresNlabels, radius=1.0):
     encoded_features = np.array(encoded_features)[0]
     labels = np.array(labels)
 
-    clf = RadiusNeighborsClassifier(radius=radius)
+    #if you want to classify unknown speaker, you need to change the next line with : clf = RadiusNeighborsClassifier(radius=radius, outlier_label='unknown')
+    clf = RadiusNeighborsClassifier(radius=radius) 
     clf.fit(encoded_features, labels)
 
     # Predict the labels using the same features (to check clustering quality)
