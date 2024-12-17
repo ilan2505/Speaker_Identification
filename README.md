@@ -37,7 +37,7 @@ Notes : we use for the clustering part 100 speakers with each one have 30 audio 
 * training.py
 * wav2vec2.py
 * wav_reader.py
-* 
+  
 ### Clustering part:
 * clustering_DEC_CRNN.py
 * clustering_DEC_EfficientNet.py
